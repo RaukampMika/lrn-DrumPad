@@ -12,6 +12,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using System.Media;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -28,6 +29,13 @@ namespace DrumPad
             this.InitializeComponent();
         }
 
-        
+        public void pad_clicked(object sender, RoutedEventArgs e)
+        {
+            var installedPath = Windows.ApplicationModel.Package.Current.InstalledLocation.Path;
+            var soundFile = Path.Join(installedPath, "Assets/Sounds", "trash.wav");
+
+            SoundPlayer player = new System.Media.SoundPlayer(soundFile);
+            player.Play();
+        }
     }
 }
