@@ -29,13 +29,73 @@ namespace DrumPad
             this.InitializeComponent();
         }
 
-        public void pad_clicked(object sender, RoutedEventArgs e)
-        {
-            var installedPath = Windows.ApplicationModel.Package.Current.InstalledLocation.Path;
-            var soundFile = Path.Join(installedPath, "Assets/Sounds", "trash.wav");
+        #region Event handlers buttons
 
-            SoundPlayer player = new System.Media.SoundPlayer(soundFile);
-            player.Play();
+        public void pad1_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("rim.wav");
         }
+
+        private void pad2_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("crash.wav");
+        }
+        private void pad3_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("elec1.wav");
+        }
+        private void pad4_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("high_snare.wav");
+        }
+        private void pad5_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("high_snare2.wav");
+        }
+        private void pad6_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("kick.wav");
+        }
+        private void pad7_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("snare.wav");
+        }
+        private void pad8_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("tom.wav");
+        }
+        private void pad9_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("trash.wav");
+        }
+        private void pad10_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip1.wav");
+        }
+        private void pad11_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip2.wav");
+        }
+        private void pad12_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip3.wav");
+        }
+        private void pad13_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip4.wav");
+        }
+        private void pad14_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip5.wav");
+        }
+        private void pad15_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip6.wav");
+        }
+        private void pad16_clicked(object sender, RoutedEventArgs e)
+        {
+            _ = new Sound("clip7.wav");
+        }
+        #endregion
     }
 }
