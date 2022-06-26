@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="4711f797-6e2b-401e-a675-2bb4eb17ff8c"
-    Publisher="CN=mika.raukamp"
-    Version="1.0.0.0" />
+    Name="1f459787-efc7-4c4c-bf90-3322df6ee199"
+    Publisher="CN=Mika Raukamp"
+    Version="1.0.1.0" />
 
   <Properties>
-    <DisplayName>DrumPad</DisplayName>
-    <PublisherDisplayName>mika.raukamp</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <DisplayName>DrumPadApp (Package)</DisplayName>
+    <PublisherDisplayName>Mika Raukamp</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -31,13 +31,13 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="DrumPad"
-        Description="DrumPad"
+        DisplayName="DrumPadApp (Package)"
+        Description="DrumPadApp (Package)"
         BackgroundColor="transparent"
-        Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        Square150x150Logo="Images\Square150x150Logo.png"
+        Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
